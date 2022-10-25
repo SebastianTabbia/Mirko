@@ -6,14 +6,18 @@
     padding: 10px 20px;
 }
 
+.galeria h1{
+    font-family: 'Raleway', sans-serif;
+}
+
 .columna{
     flex:20%;
-    max-width: 20%;
-    padding: 0 4px;
+    max-width: 25%;
+    padding: 0 10px;
 }
 
 .columna img{
-    margin-top: 8px;
+    margin-top: 20px;
     vertical-align: middle;
     width: 100%;
     filter: grayscale(100%);

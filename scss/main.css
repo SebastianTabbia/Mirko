@@ -10,14 +10,18 @@
   padding: 10px 20px;
 }
 
+.galeria h1 {
+  font-family: "Raleway", sans-serif;
+}
+
 .columna {
   flex: 20%;
-  max-width: 20%;
-  padding: 0 4px;
+  max-width: 25%;
+  padding: 0 10px;
 }
 
 .columna img {
-  margin-top: 8px;
+  margin-top: 20px;
   vertical-align: middle;
   width: 100%;
   filter: grayscale(100%);
@@ -197,7 +201,6 @@ body footer {
 
 .contenedor figure img {
   width: 100%;
-  height: 100%;
   transition: all 400ms ease-out;
   will-change: transform;
 }
@@ -268,9 +271,22 @@ nav {
 }
 
 .nav-logo {
-  margin-left: 20px;
-  z-index: 100;
+  display: flex;
+  margin-left: 10px;
+  z-index: 101;
   cursor: pointer;
+}
+
+.nav-logo img {
+  width: 50px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.nav-logo img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 300ms ease;
 }
 
 .nav-logo h2 {
@@ -319,6 +335,12 @@ nav {
 @media screen and (max-width: 800px) {
   .toggle {
     display: inline-block;
+  }
+  .nav-logo img {
+    width: 50px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
   .nav-links {
     position: absolute;
