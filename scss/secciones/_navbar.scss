@@ -1,6 +1,6 @@
 nav {
     width: 100%;
-    background: #021222;
+    background:#393E41;
     height: 80px;
     position: relative;
 }
@@ -35,14 +35,14 @@ nav {
 }
 
 .nav-logo h2 {
-    color: #95bdd8;
+    color: #fff;
     font-weight: 300;
     font-size: 35px;
     letter-spacing: 2px;
 }
 
 .nav-logo h2 span {
-    color: #0590ec;
+    color: #e94f37;
     font-weight: 700;
 }
 
@@ -52,7 +52,7 @@ nav {
 
 .link a {
     text-decoration: none;
-    color: #d1faf4;
+    color: #fff;
     font-size: 20px;
     margin: 0 25px;
     letter-spacing: 3px;
@@ -60,17 +60,18 @@ nav {
 }
 
 .link a:hover {
-    color: #487abb;
+    color: #e94f37;
 }
 
 .toggle {
-    color: #d1faf4;
+    color: #fff;
     margin-right: 20px;
     font-size: 30px;
     transform: rotate(90deg);
     cursor: pointer;
     transition: .3s;
     display: none;
+    margin-bottom: 20px;
 }
 
 .rotate {
@@ -93,7 +94,7 @@ nav {
         position: absolute;
         display: flex;
         flex-direction: column;
-        background: #021222;
+        background: #393E41;
         text-align: center;
         overflow: hidden;
         height: calc(100vh - 80px);
