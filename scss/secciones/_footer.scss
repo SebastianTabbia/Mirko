@@ -2,6 +2,7 @@ footer {
     width: 100%;
     padding: 50px 0px;
     z-index: -1;
+    background-color:#363333 ;
 }
 
 footer hr{
@@ -20,42 +21,59 @@ footer hr{
 .box__footer {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 20px;
+}
+
+.box__footer hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box__footer .logo{
+width: 100%;
+display: flex;
 }
 
 .box__footer .logo img{
-
     width: 100px;
+    display: flex;
+    margin: auto;
 }
 
 .box__footer .terms{
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
-    color: #363333;
+    color: #fff;
     font-size: 18px;
+    padding: 20px;
+    border: 3px solid #e94f37;
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
 }
 
 .box__footer .terms p{
 font-size: 12px;
+color:#fff;
 }
 
 .box__footer h2{
-    margin-bottom: 30px;
-    color: #343434;
+    margin-top: 3+0px;
+    color:#e94f37;
     font-weight: 700;
 }
 
 .box__footer a{
     margin-top: 10px;
-    color: #363333;
-    font-weight: 600;
+    color: #fff;
+    font-weight: 400;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .box__footer a:hover{
     opacity: 0.8;
     cursor: pointer;
+    color:#e94f37;
 }
 
 .box__footer a .fa-brands{
@@ -67,18 +85,19 @@ font-size: 12px;
     margin: auto;
     text-align: center;
     padding: 0px 40px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .box__copyright p{
 margin-top: 20px;
-color: #383838;
+color: #fff;
 font-size: 10px;
 }
 
 .box__copyright hr{
     border: none;
     height: 1px;
-    background-color: #7a7a7a;
+    background-color: #fff;
 }
 
 @media screen and (max-width: 800px) {
@@ -90,7 +109,7 @@ font-size: 10px;
         position: absolute;
         display: flex;
         flex-direction: column;
-        background: #021222;
+        background: #353535;
         text-align: center;
         overflow: hidden;
         height: calc(100vh - 80px);
@@ -107,4 +126,29 @@ font-size: 10px;
     .nav-links .link:hover {
         background: #051c38;
     }
+
+    .box__footer .terms p{
+        text-align: center;
+        }
 }
+
+.hr1{
+    width: 90%;
+    border:solid #e94f37 2px;
+   color: #e94f37;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px 50px 2% 4% / 41% 30% 25% 50%;
+  }
+  
+  .hr3{
+    width: 80%;
+    border:solid #fff 2px;
+   color: #fff;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    position: relative;
+    transform: translate3d(-2%, -45px, 0) scale(1.020) rotate(5deg);
+        border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+  }
