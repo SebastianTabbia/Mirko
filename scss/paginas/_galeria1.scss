@@ -1,43 +1,48 @@
+.back-galeria1 {
+    padding-top: 40px;
+    height: 100%;
+    padding-bottom: 40px;
+}
 
-
-.galeria{
+.galeria {
     display: flex;
     flex-wrap: wrap;
     padding: 10px 20px;
 }
 
-.galeria h1{
+.galeria h1 {
     font-family: 'Raleway', sans-serif;
 }
 
-.columna{
-    flex:20%;
+.columna {
+    flex: 20%;
     max-width: 25%;
     padding: 0 10px;
 }
 
-.columna img{
+.columna img {
     margin-top: 20px;
+    margin-bottom: 20px;
     vertical-align: middle;
     width: 100%;
     filter: grayscale(100%);
     transition: all .3s ease;
 }
 
-.columna img:hover{
+.columna img:hover {
     cursor: pointer;
     filter: grayscale(0%);
-    box-shadow: 0 0 10px rgba(0,0,0, .5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     transform: scale(1.1);
 }
 
-.overlay{
+.overlay {
     position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color:rgba(0,0,0, .5);
+    background-color: rgba(0, 0, 0, .5);
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -47,28 +52,28 @@
     opacity: 0;
 }
 
-.overlay .slideshow{
+.overlay .slideshow {
     width: 90%;
     height: 90%;
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(255, 255, 255, .9);
     color: black;
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-.slideshow img{
+.slideshow img {
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
 
-.btn-cerrar{
+.btn-cerrar {
     position: absolute;
     top: -15px;
     right: -15px;
     font-size: 35px;
-    background-color: rgba(0,0,0, .7);
+    background-color: rgba(0, 0, 0, .7);
     color: white;
     width: 30px;
     height: 30px;
@@ -80,12 +85,12 @@
     transition: all .2s ease;
 }
 
-.btn-cerrar:hover{
+.btn-cerrar:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
-.botones{
+.botones {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -100,49 +105,49 @@
     cursor: pointer;
 }
 
-.botones:hover >i{
+.botones:hover>i {
     transform: scale(1.1);
     transition: all .2s ease;
 }
 
-.atras{
+.atras {
     left: 20px;
 }
 
-.adelante{
+.adelante {
     right: 20px;
 }
 
-.mdi{
+.mdi {
     pointer-events: none;
 }
 
 @media screen and (max-width:800px) {
-    .columna{
+    .columna {
         flex: 50%;
         max-width: 50%;
     }
 
-    .botones{
+    .botones {
         font-size: 30px;
     }
-    
-    .atras{
+
+    .atras {
         left: 5px;
     }
 
-    .adelante{
+    .adelante {
         right: 5px;
     }
 
-    .slideshow img{
+    .slideshow img {
         width: 98%;
     }
 }
 
-@media screen and (max-width:600px){
-    .columna{
+@media screen and (max-width:600px) {
+    .columna {
         flex: 100%;
-        max-width:100%;
+        max-width: 100%;
     }
 }

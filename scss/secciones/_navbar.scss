@@ -113,4 +113,18 @@ nav {
     .nav-links .link:hover {
         background: #051c38;
     }
+
+}
+
+@media screen and (max-width: 600px){
+    .nav-logo h2{
+        font-size: 20px;
+    }
+
+    .nav-logo img{
+        width: 40px;
+        margin-top: 15px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
 }
