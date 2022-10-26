@@ -1,4 +1,4 @@
-.main-galeria2{
+.main-galeria3{
     padding-top: 40px;
     height: 100%;
     padding-bottom: 40px;
@@ -64,7 +64,7 @@
 
   //MODAL//
 
-  .galeria1{
+  .galeria2{
     display: flex;
     flex-wrap: wrap;
     padding: 10px 20px;
@@ -92,7 +92,7 @@
 
 }
 
-.overlay1{
+.overlay2{
     position: fixed;
     left: 0;
     top: 0;
@@ -108,7 +108,7 @@
     opacity: 0;
 }
 
-.overlay1 .slideshow1{
+.overlay2 .slideshow2{
     width: 90%;
     height: 90%;
     background-color: rgba(255,255,255,.9);
@@ -118,7 +118,7 @@
     justify-content: center;
 }
 
-.slideshow1 img{
+.slideshow2 img{
     height: 100%;
     width: 100%;
     object-fit: contain;
@@ -198,7 +198,7 @@
         right: 5px;
     }
 
-    .slideshow1 img{
+    .slideshow2 img{
         width: 98%;
     }
 }
