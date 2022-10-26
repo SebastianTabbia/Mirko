@@ -13,16 +13,16 @@ body footer {
 }
 
 .section-ctn {
-    width: 100%;
+    width: 90%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
     margin: auto;
 }
 
 .contenedor {
-    margin-top: 40px;
-    width: 100%;
+    margin-top: 20px;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,8 +30,8 @@ body footer {
 
 .contenedor figure {
     position: relative;
-    height: 250px;
     cursor: pointer;
+    height: 350px;
     width: 350px;
     overflow: hidden;
     border-radius: 6px;
@@ -122,10 +122,39 @@ body footer {
 }
 
 
+@media screen and (max-width: 1024px) {
+    .contenedor figure {
+        height: 290px;
+        width: 290px;
+    }
 
-@media screen and (max-width: 760px) {
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor figure {
+        height: 230px;
+        width: 230px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
     .section-ctn {
         flex-direction: column;
         flex-wrap: wrap;
     }
+
+    .contenedor figure {
+        height: 380px;
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contenedor figure {
+        height: 290px;
+        width: 290px;
+    }
+
 }

@@ -4,7 +4,7 @@
     padding-bottom: 40px;
 }
 
-.sketchy {
+.sketchy3 {
     margin: auto;
     width: 90%;
     padding: 20px;
@@ -181,31 +181,57 @@
 }
 
 @media screen and (max-width:800px) {
-    .columna{
+    .columna {
         flex: 50%;
         max-width: 50%;
     }
 
-    .botones{
+    .botones {
         font-size: 30px;
     }
-    
-    .atras{
+
+    .atras {
         left: 5px;
     }
 
-    .adelante{
+    .adelante {
         right: 5px;
     }
 
-    .slideshow1 img{
+    .slideshow img {
         width: 98%;
+    }
+
+.sketchy3 h1{
+    font-size: 40px;
+}
+
+}
+
+@media screen and (max-width:600px) {
+    .columna {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .sketchy3 h1{
+        font-size: 30px;
+        height: 40px;
     }
 }
 
-@media screen and (max-width:600px){
-    .columna{
-        flex: 100%;
-        max-width:100%;
+@media screen and (max-width:425px) {
+
+    .sketchy3 h1{
+        font-size: 18px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .sketchy3 h1{
+        font-size: 15px;
+        height: 20px;
     }
 }
