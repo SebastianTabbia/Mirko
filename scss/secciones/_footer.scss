@@ -7,7 +7,7 @@ footer {
 
 footer hr{
     margin: auto;
-    width: 95%;
+    width: 100%;
 }
 
 .container_footer {
@@ -21,6 +21,8 @@ footer hr{
 
 .box__footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 20px;
     margin: auto;
@@ -42,27 +44,44 @@ display: flex;
     margin: auto;
 }
 
-.box__footer .terms{
+.box__footer .terms p{
     max-width: 350px;
     margin-top: 20px;
-    font-weight: 500;
-    color: #fff;
-    font-size: 18px;
+    font-weight: 100;
+    color:white;
+    font-size: 14px;
     padding: 20px;
-    border: 3px solid #e94f37;
-    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
-.box__footer .terms p{
-font-size: 12px;
-color:#fff;
-font-family: 'Nunito', sans-serif;
+.box__footer .terms hr{
+     position:block;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  width: 40px;
+  margin-top: 20px;
+  margin-left: 5%;
 }
+
 
 .box__footer h2{
-    margin-top: 30px;
-    color:#e94f37;
-    font-weight: 700;
+    color:white;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box__footer hr{
+    position:block;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    width: 40px;
+    margin-top: 20px;
+    margin-left: -5%;
 }
 
 .box__footer a{
@@ -70,19 +89,20 @@ font-family: 'Nunito', sans-serif;
     margin: auto;
     margin-top: 10px;
     color: #fff;
-    font-weight: 400;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 100;
+    
 }
 
 .box__footer a:hover{
     opacity: 0.8;
     cursor: pointer;
-    color:#e94f37;
+    color:darkgray;
 }
 
 .box__footer a .fa-brands{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .box__copyright {

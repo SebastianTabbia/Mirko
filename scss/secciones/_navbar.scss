@@ -36,20 +36,22 @@ nav {
 
 .nav-logo h2 {
     color: #fff;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 35px;
     letter-spacing: 2px;
     font-family: 'Roboto', sans-serif;
 }
 
 .nav-logo h2 span {
-    color: #e94f37;
-    font-weight: 700;
+    color:white;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-links .link {
     display: inline-block;
 }
+
 
 .link a {
     text-decoration: none;
@@ -58,11 +60,26 @@ nav {
     margin: 0 25px;
     letter-spacing: 3px;
     transition: .3s;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 100;
 }
 
 .link a:hover {
-    color: #e94f37;
+    color:darkgray;
+}
+
+li.selected{
+    color: #fff;
+}
+
+.selected:before{
+    content: '';
+    width: 50px;
+    height: 1%;
+    background: white;
+    position: absolute;
+    bottom: 17px;
+    transform: translateX(10px);
 }
 
 .toggle {
@@ -114,6 +131,9 @@ nav {
         background: #051c38;
     }
 
+    .selected:before{
+       visibility: hidden;
+    }
 }
 
 @media screen and (max-width: 600px){
