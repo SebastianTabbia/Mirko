@@ -4,10 +4,143 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #353535;
+}
+
+.back-galeria1 {
+  background-color: #353535;
+  height: 100%;
+}
+
+.main-title2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.ctn-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 50px;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 20px;
+  font-family: "Courier Prime", monospace;
+  text-transform: uppercase;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: white;
+  padding-top: 20px;
+  border: none;
+  outline: 0px;
+  text-transform: uppercase;
+  font-family: "Courier Prime", monospace;
+}
+
+.form .lbl-nombre {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.form .lbl-nombre:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid white;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.text-nomb {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.form input:focus + .lbl-nombre .text-nomb,
+.form input:valid + .lbl-nombre .text-nomb {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: white;
+}
+
+.form input:focus + .lbl-nombre:after,
+.form input:valid + .lbl-nombre:after {
+  transform: translateX(0%);
+}
+
+.btn {
+  margin: 0 auto;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 20px 5px 20px;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 10px black;
+  background-color: rgba(192, 190, 190, 0.685);
+  transition: all 300ms ease;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #011a2e;
+  box-shadow: 0 5px 10px black;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  border: solid 2px white;
+}
+
+.span {
+  margin-left: 10px;
+  color: white;
+  font-family: "Courier Prime", monospace;
+}
+
+.info {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .main-galeria3 {
@@ -681,16 +814,10 @@ nav {
 
 .nav-logo h2 {
   color: #fff;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 35px;
   letter-spacing: 2px;
-  font-family: "Roboto", sans-serif;
-}
-
-.nav-logo h2 span {
-  color: white;
-  font-weight: 900;
-  font-family: "Roboto", sans-serif;
+  font-family: "Bebas Neue", cursive;
 }
 
 .nav-links .link {
@@ -809,9 +936,9 @@ main {
 
 .main-title h1 {
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  font-size: 90px;
   margin-right: 30px;
   line-height: 50px;
 }
@@ -987,7 +1114,7 @@ footer hr {
 .container_footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 90%;
   margin: auto;
@@ -998,8 +1125,9 @@ footer hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
   margin: auto;
+  height: 100%;
+  margin-top: 5px;
 }
 
 .box__footer hr {
@@ -1063,7 +1191,7 @@ footer hr {
   margin-top: 10px;
   color: #fff;
   text-decoration: none;
-  font-family: "Courier Prime", monospace;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
 

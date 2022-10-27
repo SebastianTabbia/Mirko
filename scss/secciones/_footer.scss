@@ -13,10 +13,11 @@ footer hr{
 .container_footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 90%;
     margin: auto;
+
 }
 
 .box__footer {
@@ -24,8 +25,9 @@ footer hr{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
     margin: auto;
+    height: 100%;
+    margin-top: 5px;
 }
 
 .box__footer hr{
@@ -71,6 +73,7 @@ display: flex;
     color:white;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 .box__footer hr{
@@ -90,7 +93,7 @@ display: flex;
     margin-top: 10px;
     color: #fff;
     text-decoration: none;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     
 }
