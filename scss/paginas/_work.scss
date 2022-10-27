@@ -1,6 +1,7 @@
 body main {
     width: 100%;
     height: 80%;
+    background-color: #353535;
 }
 
 body footer {
@@ -11,6 +12,53 @@ body footer {
 .back-work {
     padding-top: 40px;
 }
+
+.main-title2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    
+  }
+  
+  .main-title2 h1{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-right: 30px;
+    line-height: 50px;
+    text-transform: uppercase;
+    
+  }
+  
+  
+  .main-title2 p{
+   color: #bbb;
+   width: 60%;
+   font-size: 16px;
+   text-align: center;
+   margin: auto;
+   margin-top: 30px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 500;
+  }
+  
+  .main-title2 hr{
+    position:block;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid white;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+
 
 .section-ctn {
     width: 90%;
@@ -71,12 +119,12 @@ body footer {
 }
 
 .contenedor figure .capa h3 {
-    color: #e94f37;
-    background-color: #fff;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.363);
     padding: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 30px;
     transition: all 400ms ease-out;
     margin-top: 100px;
@@ -84,41 +132,14 @@ body footer {
 
 .contenedor figure .capa p {
     color: #fff;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.5;
     width: 100%;
     max-width: 220px;
     margin: auto;
     margin-bottom: 40px;
-    font-family: 'Fasthand', cursive;
-}
-
-.sketchy2 {
-    margin: auto;
-    width: 70%;
-    border: 4px solid #e94f37;
-    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
-    background: #ffffff;
-    position: relative;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(184, 183, 183, 0.185);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(184, 183, 183, 0.185);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.24);
-    display: flex;
-    flex-direction: column;
-
-    &::before {
-        content: '';
-        border: 2px solid #ffffff;
-        display: block;
-        width: 98%;
-        height: 98%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0) scale(1.020) rotate(1deg);
-        border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
-    }
-
+    font-family: 'Courier Prime', monospace;
+    font-weight: 100;
 }
 
 
@@ -151,6 +172,16 @@ body footer {
     }
 }
 
+@media screen and (max-width: 600px){
+    .main-title2 hr{
+      margin-left: 10%;
+    }
+  }
+
+  .main-title2 p{
+    font-size: 14px;
+  }
+
 @media screen and (max-width: 425px) {
     .contenedor figure {
         height: 290px;
@@ -158,3 +189,4 @@ body footer {
     }
 
 }
+
