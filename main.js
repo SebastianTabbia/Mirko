@@ -101,9 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
     carousel.querySelectorAll(".dot")[item].classList.add("active");
   }
   
-
-
-
 //GALERIA 1//
 
 document.addEventListener('DOMContentLoaded', function() {

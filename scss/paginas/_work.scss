@@ -63,10 +63,18 @@ body footer {
 .section-ctn {
     width: 90%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
 }
+
+.column{
+    flex: 30%;
+    width: 25%;
+}
+
 
 .contenedor {
     margin-top: 20px;
