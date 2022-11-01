@@ -113,7 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
         { img: './img/LPDA-LUNAPARK/5.jpg' },
         { img: './img/LPDA-LUNAPARK/6.jpg' },
         { img: './img/LPDA-LUNAPARK/7.jpg' },
-        { img: './img/LPDA-LUNAPARK/8.jpeg' },
     ];
 
     let contador = 0
@@ -245,6 +244,344 @@ document.addEventListener('DOMContentLoaded', function() {
   const overlay = document.querySelector('.overlay2');
   const galeria_imagenes = document.querySelectorAll('.galeria2 img');
   const img_slideshows = document.querySelector('.slideshow2 img');
+
+
+  contenedor.addEventListener('click', function(event) {
+      let atras = contenedor.querySelector('.atras'),
+          adelante = contenedor.querySelector('.adelante'),
+          img = contenedor.querySelector('img'),
+          tgt = event.target
+      if (tgt == atras) {
+          if (contador > 0) {
+              img.src = imagenes[contador - 1].img
+              contador--
+          } else {
+              img.src = imagenes[imagenes.length - 1].img
+              contador = imagenes.length - 1
+          }
+      } else if (tgt == adelante) {
+          if (contador < imagenes.length - 1) {
+              img.src = imagenes[contador + 1].img
+              contador++
+          } else {
+              img.src = imagenes[0].img
+              contador = 0
+          }
+      }
+
+  })
+  Array.from(galeria_imagenes).forEach(img => {
+      img.addEventListener('click', event => {
+          const imagen_seleccionada = +(event.target.dataset.imgMostrar1)
+          img_slideshows.src = imagenes[imagen_seleccionada].img
+          contador = imagen_seleccionada
+          overlay.style.opacity = 1
+          overlay.style.visibility = 'visible'
+      })
+  })
+
+  var span = document.getElementsByClassName("btn-cerrar")[0];
+  span.onclick = function() {
+      overlay.style.visibility = "hidden"; 
+  }
+})
+
+//GALERIA 4//
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  let imagenes = [
+      { img: './img/AMERICANBLUE/1.jpg' },
+      { img: './img/AMERICANBLUE/2.jpg' },
+  ];
+
+  let contador = 0
+  const contenedor = document.querySelector('.slideshow3');
+  const overlay = document.querySelector('.overlay3');
+  const galeria_imagenes = document.querySelectorAll('.galeria3 img');
+  const img_slideshows = document.querySelector('.slideshow3 img');
+
+
+  contenedor.addEventListener('click', function(event) {
+      let atras = contenedor.querySelector('.atras'),
+          adelante = contenedor.querySelector('.adelante'),
+          img = contenedor.querySelector('img'),
+          tgt = event.target
+      if (tgt == atras) {
+          if (contador > 0) {
+              img.src = imagenes[contador - 1].img
+              contador--
+          } else {
+              img.src = imagenes[imagenes.length - 1].img
+              contador = imagenes.length - 1
+          }
+      } else if (tgt == adelante) {
+          if (contador < imagenes.length - 1) {
+              img.src = imagenes[contador + 1].img
+              contador++
+          } else {
+              img.src = imagenes[0].img
+              contador = 0
+          }
+      }
+
+  })
+  Array.from(galeria_imagenes).forEach(img => {
+      img.addEventListener('click', event => {
+          const imagen_seleccionada = +(event.target.dataset.imgMostrar1)
+          img_slideshows.src = imagenes[imagen_seleccionada].img
+          contador = imagen_seleccionada
+          overlay.style.opacity = 1
+          overlay.style.visibility = 'visible'
+      })
+  })
+
+  var span = document.getElementsByClassName("btn-cerrar")[0];
+  span.onclick = function() {
+      overlay.style.visibility = "hidden"; 
+  }
+})
+
+//GALERIA 5//
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  let imagenes = [
+      { img: './img/29 DE JUNIO/1.jpg' },
+      { img: './img/29 DE JUNIO/2.jpg' },
+  ];
+
+  let contador = 0
+  const contenedor = document.querySelector('.slideshow4');
+  const overlay = document.querySelector('.overlay4');
+  const galeria_imagenes = document.querySelectorAll('.galeria4 img');
+  const img_slideshows = document.querySelector('.slideshow4 img');
+
+
+  contenedor.addEventListener('click', function(event) {
+      let atras = contenedor.querySelector('.atras'),
+          adelante = contenedor.querySelector('.adelante'),
+          img = contenedor.querySelector('img'),
+          tgt = event.target
+      if (tgt == atras) {
+          if (contador > 0) {
+              img.src = imagenes[contador - 1].img
+              contador--
+          } else {
+              img.src = imagenes[imagenes.length - 1].img
+              contador = imagenes.length - 1
+          }
+      } else if (tgt == adelante) {
+          if (contador < imagenes.length - 1) {
+              img.src = imagenes[contador + 1].img
+              contador++
+          } else {
+              img.src = imagenes[0].img
+              contador = 0
+          }
+      }
+
+  })
+  Array.from(galeria_imagenes).forEach(img => {
+      img.addEventListener('click', event => {
+          const imagen_seleccionada = +(event.target.dataset.imgMostrar1)
+          img_slideshows.src = imagenes[imagen_seleccionada].img
+          contador = imagen_seleccionada
+          overlay.style.opacity = 1
+          overlay.style.visibility = 'visible'
+      })
+  })
+
+  var span = document.getElementsByClassName("btn-cerrar")[0];
+  span.onclick = function() {
+      overlay.style.visibility = "hidden"; 
+  }
+})
+
+//GALERIA 6//
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  let imagenes = [
+      { img: './img/ORBITA 29/1.jpg' },
+      { img: './img/ORBITA 29/2.jpg' },
+  ];
+
+  let contador = 0
+  const contenedor = document.querySelector('.slideshow5');
+  const overlay = document.querySelector('.overlay5');
+  const galeria_imagenes = document.querySelectorAll('.galeria5 img');
+  const img_slideshows = document.querySelector('.slideshow5 img');
+
+
+  contenedor.addEventListener('click', function(event) {
+      let atras = contenedor.querySelector('.atras'),
+          adelante = contenedor.querySelector('.adelante'),
+          img = contenedor.querySelector('img'),
+          tgt = event.target
+      if (tgt == atras) {
+          if (contador > 0) {
+              img.src = imagenes[contador - 1].img
+              contador--
+          } else {
+              img.src = imagenes[imagenes.length - 1].img
+              contador = imagenes.length - 1
+          }
+      } else if (tgt == adelante) {
+          if (contador < imagenes.length - 1) {
+              img.src = imagenes[contador + 1].img
+              contador++
+          } else {
+              img.src = imagenes[0].img
+              contador = 0
+          }
+      }
+
+  })
+  Array.from(galeria_imagenes).forEach(img => {
+      img.addEventListener('click', event => {
+          const imagen_seleccionada = +(event.target.dataset.imgMostrar1)
+          img_slideshows.src = imagenes[imagen_seleccionada].img
+          contador = imagen_seleccionada
+          overlay.style.opacity = 1
+          overlay.style.visibility = 'visible'
+      })
+  })
+
+  var span = document.getElementsByClassName("btn-cerrar")[0];
+  span.onclick = function() {
+      overlay.style.visibility = "hidden"; 
+  }
+})
+
+//GALERIA 7//
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  let imagenes = [
+      { img: './img/UN RE BARDO/1.jpg' },
+      { img: './img/UN RE BARDO/2.jpg' },
+      { img: './img/UN RE BARDO/3.jpg' },
+      { img: './img/UN RE BARDO/4.jpg' },
+  ];
+
+  let contador = 0
+  const contenedor = document.querySelector('.slideshow6');
+  const overlay = document.querySelector('.overlay6');
+  const galeria_imagenes = document.querySelectorAll('.galeria6 img');
+  const img_slideshows = document.querySelector('.slideshow6 img');
+
+
+  contenedor.addEventListener('click', function(event) {
+      let atras = contenedor.querySelector('.atras'),
+          adelante = contenedor.querySelector('.adelante'),
+          img = contenedor.querySelector('img'),
+          tgt = event.target
+      if (tgt == atras) {
+          if (contador > 0) {
+              img.src = imagenes[contador - 1].img
+              contador--
+          } else {
+              img.src = imagenes[imagenes.length - 1].img
+              contador = imagenes.length - 1
+          }
+      } else if (tgt == adelante) {
+          if (contador < imagenes.length - 1) {
+              img.src = imagenes[contador + 1].img
+              contador++
+          } else {
+              img.src = imagenes[0].img
+              contador = 0
+          }
+      }
+
+  })
+  Array.from(galeria_imagenes).forEach(img => {
+      img.addEventListener('click', event => {
+          const imagen_seleccionada = +(event.target.dataset.imgMostrar1)
+          img_slideshows.src = imagenes[imagen_seleccionada].img
+          contador = imagen_seleccionada
+          overlay.style.opacity = 1
+          overlay.style.visibility = 'visible'
+      })
+  })
+
+  var span = document.getElementsByClassName("btn-cerrar")[0];
+  span.onclick = function() {
+      overlay.style.visibility = "hidden"; 
+  }
+})
+
+//GALERIA 8//
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  let imagenes = [
+      { img: './img/MUNICH BEER HOUSE/1.jpg' },
+      { img: './img/MUNICH BEER HOUSE/2.jpg' },
+  ];
+
+  let contador = 0
+  const contenedor = document.querySelector('.slideshow7');
+  const overlay = document.querySelector('.overlay7');
+  const galeria_imagenes = document.querySelectorAll('.galeria7 img');
+  const img_slideshows = document.querySelector('.slideshow7 img');
+
+
+  contenedor.addEventListener('click', function(event) {
+      let atras = contenedor.querySelector('.atras'),
+          adelante = contenedor.querySelector('.adelante'),
+          img = contenedor.querySelector('img'),
+          tgt = event.target
+      if (tgt == atras) {
+          if (contador > 0) {
+              img.src = imagenes[contador - 1].img
+              contador--
+          } else {
+              img.src = imagenes[imagenes.length - 1].img
+              contador = imagenes.length - 1
+          }
+      } else if (tgt == adelante) {
+          if (contador < imagenes.length - 1) {
+              img.src = imagenes[contador + 1].img
+              contador++
+          } else {
+              img.src = imagenes[0].img
+              contador = 0
+          }
+      }
+
+  })
+  Array.from(galeria_imagenes).forEach(img => {
+      img.addEventListener('click', event => {
+          const imagen_seleccionada = +(event.target.dataset.imgMostrar1)
+          img_slideshows.src = imagenes[imagen_seleccionada].img
+          contador = imagen_seleccionada
+          overlay.style.opacity = 1
+          overlay.style.visibility = 'visible'
+      })
+  })
+
+  var span = document.getElementsByClassName("btn-cerrar")[0];
+  span.onclick = function() {
+      overlay.style.visibility = "hidden"; 
+  }
+})
+
+//GALERIA 9//
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  let imagenes = [
+      { img: './img/PATAGONIA ARGENTINA/1.jpg' },
+      { img: './img/PATAGONIA ARGENTINA/2.jpg' },
+  ];
+
+  let contador = 0
+  const contenedor = document.querySelector('.slideshow8');
+  const overlay = document.querySelector('.overlay8');
+  const galeria_imagenes = document.querySelectorAll('.galeria8 img');
+  const img_slideshows = document.querySelector('.slideshow8 img');
 
 
   contenedor.addEventListener('click', function(event) {
