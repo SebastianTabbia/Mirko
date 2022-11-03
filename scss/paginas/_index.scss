@@ -10,6 +10,22 @@ padding-top: 40px;
 background-color: #353535;
 }
 
+.hero{
+min-height: 100vh;
+position: relative;
+}
+
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
 .main-title{
   display: flex;
   flex-direction: column;
@@ -18,6 +34,14 @@ background-color: #353535;
   justify-content: center;
   text-align: center;
   margin: auto;  
+  z-index: 1;
+}
+
+.main-title h1{
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  font-weight: 100;
 }
 
 .main-title span{
@@ -155,8 +179,9 @@ main section .carousel-container .dots .dot:focus, main section .carousel-contai
 }
 
 .ctn-title img{
-  width:400px;
+  width:200px;
   margin: auto;
+  z-index: 1;
 }
 
 @media screen and (max-width: 600px){

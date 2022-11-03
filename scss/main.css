@@ -1748,16 +1748,9 @@ nav {
   cursor: pointer;
 }
 
-.nav-logo img {
-  width: 40px;
-  margin-top: 10px;
-  margin-right: 20px;
-}
-
-.nav-logo img:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: all 300ms ease;
+.nav-logo a {
+  text-decoration: none;
+  margin-left: 10px;
 }
 
 .nav-logo h2 {
@@ -1766,6 +1759,12 @@ nav {
   font-size: 35px;
   letter-spacing: 2px;
   font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.nav-logo h2:hover {
+  transform: scale(1.1);
 }
 
 .nav-links .link {
@@ -1871,6 +1870,22 @@ main {
   background-color: #353535;
 }
 
+.hero {
+  min-height: 100vh;
+  position: relative;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
 .main-title {
   display: flex;
   flex-direction: column;
@@ -1879,6 +1894,14 @@ main {
   justify-content: center;
   text-align: center;
   margin: auto;
+  z-index: 1;
+}
+
+.main-title h1 {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 40px;
+  font-weight: 100;
 }
 
 .main-title span {
@@ -2038,8 +2061,9 @@ main section .carousel-container .dots .dot:focus, main section .carousel-contai
 }
 
 .ctn-title img {
-  width: 400px;
+  width: 200px;
   margin: auto;
+  z-index: 1;
 }
 
 @media screen and (max-width: 600px) {

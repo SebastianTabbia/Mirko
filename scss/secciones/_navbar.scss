@@ -22,17 +22,11 @@ nav {
 
 }
 
-.nav-logo img{
-    width: 40px;
-    margin-top: 10px;
-    margin-right: 20px;
+.nav-logo a{
+    text-decoration: none;
+    margin-left: 10px;
 }
 
-.nav-logo img:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: all 300ms ease;
-}
 
 .nav-logo h2 {
     color: #fff;
@@ -40,6 +34,12 @@ nav {
     font-size: 35px;
     letter-spacing: 2px;
     font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+
+.nav-logo h2:hover{
+transform: scale(1.1);
 }
 
 
