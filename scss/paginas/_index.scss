@@ -11,18 +11,30 @@ background-color: #353535;
 }
 
 .hero{
-min-height: 100vh;
 position: relative;
 }
 
 video{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 10px;
+  width: 90%;
+  height: 600px;
   object-fit: cover;
   z-index: 0;
+  display: flex;
+  transform: translateX(5%);
+}
+
+.ctn-title{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ctn-title img{
+  width:200px;
+  margin: auto;
+  z-index: 1;
 }
 
 
@@ -38,14 +50,14 @@ video{
 }
 
 .main-title h1{
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: 'Bebas Neue', cursive;
   font-size: 40px;
   font-weight: 100;
 }
 
 .main-title span{
-  color: white;
+  color: black;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 30px;
@@ -53,7 +65,7 @@ video{
 }
 
 .main-title p{
- color: #bbb;
+ color: black;
  width: 60%;
  font-size: 16px;
  text-align: center;
@@ -68,7 +80,7 @@ video{
   display: block;
   align-items: center;
   justify-content: center;
-  border: 0.5px solid white;
+  border: 0.5px solid rgb(0, 0, 0);
   width: 50px;
   margin-top: 20px;
   margin-left: 20%;
@@ -171,17 +183,6 @@ main section .carousel-container .dots .dot:focus, main section .carousel-contai
   to {
     opacity: 1;
   }
-}
-
-.ctn-title{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.ctn-title img{
-  width:200px;
-  margin: auto;
-  z-index: 1;
 }
 
 @media screen and (max-width: 600px){
