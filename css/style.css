@@ -1752,7 +1752,7 @@ video {
   width: 90%;
   height: 600px;
   object-fit: cover;
-  z-index: 0;
+  z-index: -1;
   display: flex;
   transform: translateX(5%); }
 
@@ -1764,7 +1764,7 @@ video {
 .ctn-title img {
   width: 200px;
   margin: auto;
-  z-index: 1; }
+  z-index: 2; }
 
 .main-title {
   display: flex;
@@ -1808,6 +1808,9 @@ video {
   width: 50px;
   margin-top: 20px;
   margin-left: 20%; }
+
+.capa {
+  height: 10px; }
 
 main section {
   width: 100%;
