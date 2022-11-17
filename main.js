@@ -680,3 +680,280 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.style.visibility = "hidden"; 
     }
   })
+
+  //GALERIA 12//
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    let imagenes = [
+        { img: './img/FACEBOOK/1.jpg' },
+        { img: './img/FACEBOOK/2.jpg' },
+        { img: './img/FACEBOOK/3.jpg' },
+        { img: './img/FACEBOOK/4.jpg' },
+        { img: './img/FACEBOOK/5.jpg' },
+        { img: './img/FACEBOOK/6.jpg' },
+        { img: './img/FACEBOOK/7.jpg' },
+        { img: './img/FACEBOOK/8.jpg' },
+        { img: './img/FACEBOOK/9.jpg' },
+        { img: './img/FACEBOOK/10.jpg' },
+        { img: './img/FACEBOOK/11.jpg' },
+        { img: './img/FACEBOOK/12.jpg' },
+        { img: './img/FACEBOOK/13.jpg' },
+        { img: './img/FACEBOOK/14.jpg' },
+        { img: './img/FACEBOOK/15.jpg' },
+        { img: './img/FACEBOOK/16.jpg' },
+        { img: './img/FACEBOOK/17.jpg' },
+        { img: './img/FACEBOOK/18.jpg' },
+        { img: './img/FACEBOOK/19.jpg' },
+        { img: './img/FACEBOOK/20.jpg' },
+        { img: './img/FACEBOOK/21.jpg' },
+        { img: './img/FACEBOOK/22.jpg' },
+        { img: './img/FACEBOOK/23.jpg' },
+        { img: './img/FACEBOOK/24.jpg' },
+
+    ];
+  
+    let contador = 0
+    const contenedor = document.querySelector('.slideshow11');
+    const overlay = document.querySelector('.overlay11');
+    const galeria_imagenes = document.querySelectorAll('.galeria11 img');
+    const img_slideshows = document.querySelector('.slideshow11 img');
+  
+  
+    contenedor.addEventListener('click', function(event) {
+        let atras = contenedor.querySelector('.atras'),
+            adelante = contenedor.querySelector('.adelante'),
+            img = contenedor.querySelector('img'),
+            tgt = event.target
+        if (tgt == atras) {
+            if (contador > 0) {
+                img.src = imagenes[contador - 1].img
+                contador--
+            } else {
+                img.src = imagenes[imagenes.length - 1].img
+                contador = imagenes.length - 1
+            }
+        } else if (tgt == adelante) {
+            if (contador < imagenes.length - 1) {
+                img.src = imagenes[contador + 1].img
+                contador++
+            } else {
+                img.src = imagenes[0].img
+                contador = 0
+            }
+        }
+  
+    })
+    Array.from(galeria_imagenes).forEach(img => {
+        img.addEventListener('click', event => {
+            const imagen_seleccionada = +(event.target.dataset.imgMostrar1)
+            img_slideshows.src = imagenes[imagen_seleccionada].img
+            contador = imagen_seleccionada
+            overlay.style.opacity = 1
+            overlay.style.visibility = 'visible'
+        })
+    })
+  
+    var span = document.getElementsByClassName("btn-cerrar")[0];
+    span.onclick = function() {
+        overlay.style.visibility = "hidden"; 
+    }
+  })
+  
+   //GALERIA 13//
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    let imagenes = [
+        { img: './img/CIALE ALTA/1.jpg' },
+        { img: './img/CIALE ALTA/2.jpg' },
+        { img: './img/CIALE ALTA/3.jpg' },
+        { img: './img/CIALE ALTA/4.jpg' },
+        { img: './img/CIALE ALTA/5.jpg' },
+        { img: './img/CIALE ALTA/6.jpg' },
+        { img: './img/CIALE ALTA/7.jpg' },
+        { img: './img/CIALE ALTA/8.jpg' },
+        { img: './img/CIALE ALTA/9.jpg' },
+        { img: './img/CIALE ALTA/10.jpg' },
+        { img: './img/CIALE ALTA/11.jpg' },
+        { img: './img/CIALE ALTA/12.jpg' },
+        { img: './img/CIALE ALTA/13.jpg' },
+    ];
+  
+    let contador = 0
+    const contenedor = document.querySelector('.slideshow12');
+    const overlay = document.querySelector('.overlay12');
+    const galeria_imagenes = document.querySelectorAll('.galeria12 img');
+    const img_slideshows = document.querySelector('.slideshow12 img');
+  
+  
+    contenedor.addEventListener('click', function(event) {
+        let atras = contenedor.querySelector('.atras'),
+            adelante = contenedor.querySelector('.adelante'),
+            img = contenedor.querySelector('img'),
+            tgt = event.target
+        if (tgt == atras) {
+            if (contador > 0) {
+                img.src = imagenes[contador - 1].img
+                contador--
+            } else {
+                img.src = imagenes[imagenes.length - 1].img
+                contador = imagenes.length - 1
+            }
+        } else if (tgt == adelante) {
+            if (contador < imagenes.length - 1) {
+                img.src = imagenes[contador + 1].img
+                contador++
+            } else {
+                img.src = imagenes[0].img
+                contador = 0
+            }
+        }
+  
+    })
+    Array.from(galeria_imagenes).forEach(img => {
+        img.addEventListener('click', event => {
+            const imagen_seleccionada = +(event.target.dataset.imgMostrar1)
+            img_slideshows.src = imagenes[imagen_seleccionada].img
+            contador = imagen_seleccionada
+            overlay.style.opacity = 1
+            overlay.style.visibility = 'visible'
+        })
+    })
+  
+    var span = document.getElementsByClassName("btn-cerrar")[0];
+    span.onclick = function() {
+        overlay.style.visibility = "hidden"; 
+    }
+  })
+
+   //GALERIA 15//
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    let imagenes = [
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/1.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/2.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/3.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/4.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/5.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/6.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/7.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/8.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/9.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/10.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/11.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/12.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/13.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/14.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/15.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/16.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/17.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/18.jpg' },
+        { img: './img/FAUSTO PALERMO HOLLYWOOD - SAN ANTONIO DE ARECO - CAPITAN SARMIENTO/19.jpg' },
+    ];
+  
+    let contador = 0
+    const contenedor = document.querySelector('.slideshow13');
+    const overlay = document.querySelector('.overlay13');
+    const galeria_imagenes = document.querySelectorAll('.galeria13 img');
+    const img_slideshows = document.querySelector('.slideshow13 img');
+  
+  
+    contenedor.addEventListener('click', function(event) {
+        let atras = contenedor.querySelector('.atras'),
+            adelante = contenedor.querySelector('.adelante'),
+            img = contenedor.querySelector('img'),
+            tgt = event.target
+        if (tgt == atras) {
+            if (contador > 0) {
+                img.src = imagenes[contador - 1].img
+                contador--
+            } else {
+                img.src = imagenes[imagenes.length - 1].img
+                contador = imagenes.length - 1
+            }
+        } else if (tgt == adelante) {
+            if (contador < imagenes.length - 1) {
+                img.src = imagenes[contador + 1].img
+                contador++
+            } else {
+                img.src = imagenes[0].img
+                contador = 0
+            }
+        }
+  
+    })
+    Array.from(galeria_imagenes).forEach(img => {
+        img.addEventListener('click', event => {
+            const imagen_seleccionada = +(event.target.dataset.imgMostrar1)
+            img_slideshows.src = imagenes[imagen_seleccionada].img
+            contador = imagen_seleccionada
+            overlay.style.opacity = 1
+            overlay.style.visibility = 'visible'
+        })
+    })
+  
+    var span = document.getElementsByClassName("btn-cerrar")[0];
+    span.onclick = function() {
+        overlay.style.visibility = "hidden"; 
+    }
+  })
+
+  //GALERIA 16//
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    let imagenes = [
+        { img: './img/CONCIENTIZACION AL VOLANTE/1.jpg' },
+        { img: './img/CONCIENTIZACION AL VOLANTE/2.jpg' },
+        { img: './img/CONCIENTIZACION AL VOLANTE/3.jpg' },
+        { img: './img/CONCIENTIZACION AL VOLANTE/4.jpg' },
+    ];
+  
+    let contador = 0
+    const contenedor = document.querySelector('.slideshow14');
+    const overlay = document.querySelector('.overlay14');
+    const galeria_imagenes = document.querySelectorAll('.galeria14 img');
+    const img_slideshows = document.querySelector('.slideshow14 img');
+  
+  
+    contenedor.addEventListener('click', function(event) {
+        let atras = contenedor.querySelector('.atras'),
+            adelante = contenedor.querySelector('.adelante'),
+            img = contenedor.querySelector('img'),
+            tgt = event.target
+        if (tgt == atras) {
+            if (contador > 0) {
+                img.src = imagenes[contador - 1].img
+                contador--
+            } else {
+                img.src = imagenes[imagenes.length - 1].img
+                contador = imagenes.length - 1
+            }
+        } else if (tgt == adelante) {
+            if (contador < imagenes.length - 1) {
+                img.src = imagenes[contador + 1].img
+                contador++
+            } else {
+                img.src = imagenes[0].img
+                contador = 0
+            }
+        }
+  
+    })
+    Array.from(galeria_imagenes).forEach(img => {
+        img.addEventListener('click', event => {
+            const imagen_seleccionada = +(event.target.dataset.imgMostrar1)
+            img_slideshows.src = imagenes[imagen_seleccionada].img
+            contador = imagen_seleccionada
+            overlay.style.opacity = 1
+            overlay.style.visibility = 'visible'
+        })
+    })
+  
+    var span = document.getElementsByClassName("btn-cerrar")[0];
+    span.onclick = function() {
+        overlay.style.visibility = "hidden"; 
+    }
+  })

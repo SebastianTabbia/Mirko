@@ -63,20 +63,22 @@ body footer {
 .section-ctn {
     width: 90%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     margin: auto;
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.column{
-    flex: 30%;
-    width: 25%;
+.filas{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+width: 100%;
 }
-
-
 .contenedor {
+    margin: auto;
     margin-top: 20px;
     width: 90%;
     display: flex;
@@ -177,6 +179,10 @@ body footer {
     .section-ctn {
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    .filas{
+        flex-direction: column;
     }
 
     .contenedor figure {
