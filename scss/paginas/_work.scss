@@ -77,6 +77,16 @@ align-items: center;
 flex-direction: row;
 width: 100%;
 }
+
+.filas2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 69%;
+    margin: auto;
+    }
+
 .contenedor {
     margin: auto;
     margin-top: 20px;
@@ -182,6 +192,10 @@ width: 100%;
     }
 
     .filas{
+        flex-direction: column;
+    }
+
+    .filas2{
         flex-direction: column;
     }
 
