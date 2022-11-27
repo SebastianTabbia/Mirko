@@ -17,6 +17,59 @@ body{
     margin: auto; 
   }
 
+  .ctn-general{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .ctn-datos{
+    display: flex;
+    width: 50%;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    height:150px;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+}
+
+.datos h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size:25px;
+}
+
+.datos a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    text-align: left;
+}
+
+.datos a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    color:darkgray;
+    font-weight: 400;
+}
+
+
 .ctn-form {
     width: 100%;
     display: flex;
@@ -157,4 +210,15 @@ font-family: 'Courier Prime', monospace;
     color: white;
     font-size: 14px;
     margin-top: 10px;
+}
+
+@media screen and (max-width:768px){
+    .ctn-general{
+        flex-direction: column;
+    }
+
+    section .ctn-datos{
+        width: 100px;
+    }
+
 }
