@@ -78,7 +78,7 @@ body {
   flex-direction: column;
   margin-left: 100px; }
 
-.datos h2 {
+.datos h3 {
   color: white;
   font-family: 'Roboto', sans-serif;
   text-align: left;
@@ -242,7 +242,7 @@ body {
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 0; }
-  .datos h2 {
+  .datos h3 {
     text-align: center; }
   .datos a {
     text-align: center; }
@@ -3145,7 +3145,8 @@ footer hr {
 .box__footer h2 {
   color: white;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px; }
 
 .box__footer hr {
   position: block;
@@ -3212,26 +3213,26 @@ footer hr {
   .nav-links .link:hover {
     background: #051c38; }
   .box__footer .terms p {
-    text-align: center; } }
-
-.hr1 {
-  width: 90%;
-  border: solid #e94f37 1px;
-  color: #e94f37;
-  margin: auto;
-  margin-top: 10px;
-  border-radius: 10px 50px 2% 4% / 41% 30% 25% 50%; }
-
-.hr3 {
-  width: 80%;
-  border: solid #fff 1px;
-  color: #fff;
-  margin: auto;
-  margin-top: 10px;
-  border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
-  position: relative;
-  transform: translate3d(-2%, -45px, 0) scale(1.02) rotate(5deg);
-  border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%; }
+    text-align: center; }
+  .hr1 {
+    width: 90%;
+    border: solid #e94f37 1px;
+    color: #e94f37;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px 50px 2% 4% / 41% 30% 25% 50%; }
+  .hr3 {
+    width: 80%;
+    border: solid #fff 1px;
+    color: #fff;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    position: relative;
+    transform: translate3d(-2%, -45px, 0) scale(1.02) rotate(5deg);
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%; }
+  .box__footer h2 {
+    font-size: 16px; } }
 
 @media screen and (max-width: 768px) {
   .container_footer {
